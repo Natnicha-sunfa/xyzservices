@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+   <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="#Home" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Home</a>
+    <a href="Map2.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map"></i>  Landuse Map</a>
+    <a href="Regulations and Legal Framework.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book"></i>  Regulations and Legal Framework</a>
+    <a href="Mixed_Subplots .html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-area-chart"></i> Gragh</a>
+    <a href="webapps\chart_Donut.html" class="w3-bar-item w3-button w3-padding chart-button">
+      <i class="fa fa-pie-chart"></i> Chart
+  </a>
+  
+  <style>
+      .chart-button {
+          background-color: #4caf50; 
+          color: white; 
+          border-radius: 5px; 
+          transition: background-color 0.3s, transform 0.2s;
+      }
+  
+      .chart-button:hover {
+          background-color: #45a049; 
+          transform: scale(1.05);
+      }
+  </style>
+  
+    <a href="Project.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Contact Us</a>
+    
+  </div>
+</nav>
+
+<style>
+    
+    .submenu {
+      display: none;
+      background-color: #333; 
+      padding-left: 20px;
+    }
+    
+    .menu-item:hover .submenu {
+      display: block; 
+    }
+    
+    .submenu a {
+      color: white; 
+      text-decoration: none;
+      display: block;
+      padding: 8px 16px;
+    }
+    
+    .submenu a:hover {
+      background-color: #575757; 
+    }
+    </style>
+    
+    <div class="w3-bar">
+      <div class="menu-item w3-bar-item w3-button w3-padding">
+        <i class="fa fa-eye fa-fw"></i>Services
+       
+        <div class="submenu">
+          <a href="#">Name</a>
+          <a href="#">Contact</a>
+          <a href="#">Land Use</a>
+        </div>
+      </div>
+    </div> 
+    
+
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          
+</div>
+        <div class="w3-clear"></div>
+        <h4>Populations</h4> 
+        <h3>417,885</h3>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-tree w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          
+        </div>
+        <div class="w3-clear"></div>
+        <h4>forest</h4>
+        <h3>70,502.21</h3>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-home w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Urban</h4>
+        <h3>14.51</h3>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Help</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+    
+      <div id="Landuse Map" class="w3-third">
+        <h5>Landuse Map</h5>
+        <img src="icon\LU_MAP.png" style="width:100%" alt="Google Regional Map">
+      </div>
+      <div class="w3-twothird">
+        <div class="w3-container content-container">
+          <h5>Percentage Area</h5>
+          
+          <div class="area-section">
+              <p>Forest Area</p>
+              <div class="w3-grey bar-container">
+                  <div class="w3-container w3-center w3-padding-small w3-green bar" style="width:45%">20.63%</div>
+              </div>
+          </div>
+      
+          <div class="area-section">
+              <p>Urban Area</p>
+              <div class="w3-grey bar-container">
+                  <div class="w3-container w3-center w3-padding-small w3-pink bar" style="width:35%">14.51%</div>
+              </div>
+          </div>
+      
+          <div class="area-section">
+              <p>Water Area</p>
+              <div class="w3-grey bar-container">
+                  <div class="w3-container w3-center w3-padding-small w3-blue bar" style="width:10%">0.22%</div>
+              </div>
+          </div>
+      
+          <div class="area-section">
+              <p>Agricultural Area</p>
+              <div class="w3-grey bar-container">
+                  <div class="w3-container w3-center w3-padding-small w3-amber bar" style="width:60%">55.11%</div>
+              </div>
+          </div>
+      
+          <div class="area-section">
+              <p>Open Space</p>
+              <div class="w3-grey bar-container">
+                  <div class="w3-container w3-center w3-padding-small w3-khaki bar" style="width:55%">34%</div>
+              </div>
+          </div>
+      
+          <div class="area-section">
+              <p>Mangrove Forest Area</p>
+              <div class="w3-grey bar-container">
+                  <div class="w3-container w3-center w3-padding-small w3-teal bar" style="width:25%">4.20%</div>
+              </div>
+          </div>
+      </div>
+      
+      <style>
+          .content-container {
+            background: linear-gradient(135deg, #c5e1a5, #c2e9fb);
+              padding: 16px;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              max-width: 500px;
+              margin: auto;
+          }
+          .content-container h5 {
+              font-size: 18px;
+              color: #333;
+              text-align: center;
+              margin-bottom: 20px;
+          }
+          .area-section {
+              margin-bottom: 12px;
+          }
+          .area-section p {
+              margin: 0 0 4px;
+              font-size: 14px;
+              color: #555;
+          }
+          .bar-container {
+              height: 30px; 
+              border-radius: 10px;
+              overflow: hidden;
+              display: flex;
+              align-items: center;
+          }
+          .bar {
+              height: 100%;
+              line-height: 30px; 
+              font-size: 14px;
+              color: #81f583;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+      </style>
+      
+  <!DOCTYPE html>
+  <html lang="th">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Regulations and Legal Framework</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
+          
+          body {
+              font-family: Arial, sans-serif;
+              background:  rgb(255, 255, 255);
+              margin: 0;
+              padding: 20px;
+          }
+  
+          .navbar {
+              width: 100%;
+              background-color: #3498db;
+              overflow: hidden;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              position: sticky;
+              top: 0;
+              z-index: 1000;
+          }
+  
+          .navbar a {
+              float: left;
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-weight: bold;
+          }
+  
+          .navbar a:hover {
+              background-color: #2980b9;
+          }
+  
+          .content-container {
+              width: 90%;
+              max-width: 800px;
+              background-color: white;
+              padding: 30px;
+              border-radius: 12px;
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+              transition: all 0.3s;
+              margin-top: 20px;
+          }
+  
+          .content-container:hover {
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+          }
+  
+          h5 {
+              color: #34495e;
+              font-size: 2em;
+              font-weight: 700;
+              margin-top: 0;
+              text-align: center;
+              padding-bottom: 10px;
+              border-bottom: 2px solid #ecf0f1;
+          }
+  
+          h6 {
+              color: #3498db;
+              font-size: 1.2em;
+              margin: 15px 0 5px;
+              font-weight: 600;
+          }
+  
+          p {
+              color: #555;
+              line-height: 1.8;
+              font-size: 1.1em;
+          }
+  
+          table {
+              width: 100%;
+              border-collapse: collapse;
+          }
+  
+          td {
+              padding: 15px;
+              border-bottom: 1px solid #ecf0f1;
+              background-color: #f9f9f9;
+          }
+      </style>
+  </head>
+  <body>
+  
+  
+    <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .content-container {
+      background-color: #f0f8ff; 
+      padding: 20px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px; /
+    }
+    h5, h6 {
+      color: #333; 
+      font-weight: bold; 
+    }
+    p {
+      font-size: 16px; 
+      line-height: 1.6; 
+      color: #555; 
+    }
+  </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .content-container {
+      background-color: #f0fbff; 
+      padding: 20px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 8px rgba(98, 191, 234, 0.1);
+      margin: 20px; 
+    }
+    h5, h6 {
+      color: #333; 
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px; 
+      line-height: 1.6; 
+      color: #555; 
+    }
+  </style>
+</head>
+<body>
+
+  <!DOCTYPE html>
+  <html lang="th">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <title>Regulations and Legal Framework</title>
+      <style>
+          .content-container {
+              background-color: #f0f8ff; 
+              padding: 20px;
+              border-radius: 8px; 
+          }
+      </style>
+  </head>
+  <body>
+  
+  
+  </body>
+  </html>
+  
+  
+
+    <footer class="w3-container w3-padding-16 w3-light-grey">
+      <h4>FOOTER</h4>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    
+
+    </div>
+    
+    <script>
+ 
+    var mySidebar = document.getElementById("mySidebar");
+    
+  
+    var overlayBg = document.getElementById("myOverlay");
+    
+  
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+    
+  
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+    </script>
+    
+    </body>
+    </html>
+    
